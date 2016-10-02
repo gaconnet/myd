@@ -27,16 +27,17 @@ Assuming we have defined our `Part`, `Supplier`, and `Inventory` relations alrea
             9001 AS 'supplier_id'
         ) _abc123
             JOIN
-        parts_db.part_part
-            JOIN
         supplier_db.supplier_supplier
             ON
                 supplier_supplier.supplier_id = _abc123.supplier_id
             JOIN
         supplier_db.inventory_item
             ON
-                inventory_item.part_id = part_part.id
-                AND inventory_item.supplier_id = supplier_supplier.id
+                inventory_item.supplier_id = supplier_supplier.id
+            JOIN
+        parts_db.part_part
+            ON
+                part_part.id = inventory_item.part_id
     ;
 
 Tutorial D saved us a lot of typing. Witness truly relational operators at work.
