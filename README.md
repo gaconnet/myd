@@ -4,7 +4,7 @@
 
 **NOTE** `myd` is currently in the planning & proof of concept stages. _Id est_, no working code yet.
 
-The elegant semantics of [Tutorial D](ThirdManifestoBooks) make ad-hoc queries easier to write than they would be in SQL. That can make this library nice for doing production support on a large system, where you often have to query dozens of tables across multiple databases to understand how an entity has broken.
+The elegant semantics of [Tutorial D][ThirdManifestoBooks] make ad-hoc queries easier to write than they would be in SQL. That can make this library nice for doing production support on a large system, where you often have to query dozens of tables across multiple databases to understand how an entity has broken.
 
 The name `myd` is short for `MySQL D` or `MySQL via Tutorial D`, but the name is a work in progress.
 
